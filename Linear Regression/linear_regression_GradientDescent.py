@@ -3,6 +3,8 @@ import numpy as np
 """
     Implements linear regression using gradient descent optimization.
     Finds optimal coefficients through iterative updates.
+    
+    Problem and test case from : https://www.deep-ml.com/problems/15
 
     Args:
         X: Feature matrix of shape (m, n) where m = examples, n = features
