@@ -21,6 +21,12 @@ def feature_scaling(data: np.ndarray) -> (np.ndarray, np.ndarray):
             min_max[row_idx].append(np.round(res_min_max, 4))
             row_idx += 1
         col_idx += 1
+    '''
+    loop can be replaced by numpy operation
+    
+    std_data = (data - mean)/std_dev
+    min_max = (data - min_data) / (max_data - min_data)
+    '''
 
     return std_data, min_max
 
