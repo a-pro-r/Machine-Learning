@@ -45,6 +45,9 @@ def pca(data, k):
     transformed_data = np.dot(data, principal_comp)
     print(transformed_data)
 
+    print("Variance by each PC in %")
+    print(sorted_eigen_values / sum(sorted_eigen_values) * 100)
+
     return np.round(principal_comp, 4).tolist()
 
 
